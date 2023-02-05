@@ -1,34 +1,27 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Next Social Media",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Next Social Media adalah website sosial media yang dibuat menggunakan Next.js 13 dan Firebase.",
+    image: "/web1.png",
+    github: "https://github.com/paresiqbal/next-sosmed",
+    link: "https://next-sosmed.vercel.app/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
-  },
-  {
-    name: "Kator Family Photos",
+    name: "SMKN2RL Profile",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "SMK Negeri 2 Rejang Lebong, adalah web profile yang di buat dengan Vue.js sebagai tugas akhir skripsi",
+    image: "/web2.png",
+    github: "https://github.com/paresiqbal/web-smkn2-rl",
+    link: "https://web-smkn2-rl.vercel.app/",
   },
-]
+];
 
 const ProjectsSection = () => {
   return (
@@ -78,12 +71,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
